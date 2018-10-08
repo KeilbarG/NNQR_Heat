@@ -2,11 +2,11 @@
 # clear all variables
 rm(list = ls(all = TRUE))
 graphics.off()
-setwd("C:/Users/Georg_PC/Documents/Thesis/Final_20180626/Code")
+setwd("~/Desktop/Thesis/20180626_Final/Code")
 
 
 # install and load packages
-libraries = c("quantreg","qrnn","NeuralNetTools","quantmod","h2o","igraph","lattice")
+libraries = c("lattice")
 lapply(libraries, function(x) if (!(x %in% installed.packages())) {
   install.packages(x)
 })
